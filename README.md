@@ -1,3 +1,7 @@
 # tech challenge
 
-Fase 1 - https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/65acae2376b9f01fd98b94027dd740773d815fc3/fase_1
+Relatório de exportações de vinhos
+Fase 1 - https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_1
+
+Modelo preditivo com dados da IBOVESPA (Bolsa de valores)
+Fase 2 - 
