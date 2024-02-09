@@ -1,12 +1,9 @@
 
 # Tech Challenge - Fase 1
 
-Realizada um análise dados em python para uma empresa  que exporta vinhos do Brasil para o mundo todo.
-Com isso criar relatórios iniciais a serem apresentados
-em uma reunião de investidores e acionistas,
-explicando a quantidade de vinhos exportados 
-e os fatores ex-ternos que podem surgir 
-e que interferem nas análises:
+Realizada um análise dados em python para uma empresa que exporta vinhos do Brasil para o mundo todo.
+Com isso criar relatórios iniciais a serem apresentados em uma reunião de investidores e acionistas,
+explicando a quantidade de vinhos exportados e os fatores ex-ternos que podem surgir e que interferem nas análises:
 
 
 ## Documentação
