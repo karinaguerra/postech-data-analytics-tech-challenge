@@ -1,8 +1,7 @@
 
 # Tech Challenge - Fase 2
 
-Criar um modelo preditivo com
-dados da IBOVESPA (Bolsa de valores) para criar uma série temporal e prever diariamente o fechamento da base.
+Criar um modelo preditivo com dados da IBOVESPA (Bolsa de valores) para criar uma série temporal e prever diariamente o fechamento da base.
 
 Para isso utilize a base de dados contida no [site da investing](https://br.investing.com/indices/bovespa-historical-data) e selecione o período "diário", com o intervalo de tempo que achar adequado.
 
