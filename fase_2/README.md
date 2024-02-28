@@ -13,7 +13,7 @@ Para isso utilize a base de dados contida no [site da investing](https://br.inve
 
 [Notebook](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_2/modelo_preditivo_bovespa_fase_2.ipynb)
 
-[Relatório]([https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_2/modelo_preditivo_bovespa_fase_2.ipynb](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_2/relatorio_modelo_preditivo_bovespa_fase_2.pdf))
+[Relatório](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_2/relatorio_modelo_preditivo_bovespa_fase_2.pdf)
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaguerra/)
