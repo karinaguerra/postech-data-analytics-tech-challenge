@@ -8,6 +8,7 @@ Para isso utilize a base de dados contida no [site da investing](https://br.inve
 --<br><br>
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white) <br>
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)<br>
+![Jupyter Notebook](https://icons8.com/icon/lOqoeP2Zy02f/google-colab) <br>
 
 ## Documentação
 
