@@ -5,6 +5,11 @@ Realizada um análise dados em python para uma empresa que exporta vinhos�
 Com isso criar relatórios iniciais a serem apresentados em uma reunião de investidores e acionistas,
 explicando a quantidade de vinhos exportados e os fatores ex-ternos que podem surgir e que interferem nas análises:
 
+--<br><br>
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=googlecolab&logoColor=white&color=%23F9AB00)<br/>
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
 
 ## Documentação
 
