@@ -7,8 +7,11 @@ Para isso utilize a base de dados contida no [site da investing](https://br.inve
 
 --<br><br>
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=googlecolab&logoColor=white&color=%23F9AB00)<br/>
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+
+
 
 ## Documentação
 
