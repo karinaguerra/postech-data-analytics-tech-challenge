@@ -10,6 +10,8 @@ Para isso utilize a base de dados contida no [PNAD-COVlD-19 do IBGE](https://www
 ![Colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=googlecolab&logoColor=white&color=%23F9AB00)<br/>
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+![PySpark](https://img.shields.io/badge/pyspark-black?style=for-the-badge&logo=apachespark&logoColor=%23ffffff&color=%23E25A1C)<br/>
+![GoogleBigQuery](https://img.shields.io/badge/bigquery-black?style=for-the-badge&logo=googlebigquery&logoColor=%23ffffff&color=%23669DF6)
 
 
           
