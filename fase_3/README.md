@@ -15,8 +15,8 @@ Para isso utilize a base de dados contida no [PNAD-COVlD-19 do IBGE](https://www
           
 ## Documentação
 
-[Notebook - Análise Exploratória de Dados](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_3/ead_pnad_covid_ibge_fase_3.ipynb)
-[Notebook - Tratamento de Dados](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_3/tratamento_dados_pnad_covid_ibge_fase_3.ipynb)
+[Notebook - Análise Exploratória de Dados](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_3/ead_pnad_covid_ibge_fase_3.ipynb)<br>
+[Notebook - Tratamento de Dados](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_3/tratamento_dados_pnad_covid_ibge_fase_3.ipynb)<br>
 [Notebook -  pyspark e findspark](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_3/pyspark_pnad_covid_ibge_fase_3.ipynb)
 
 ## 🔗 Links
