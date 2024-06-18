@@ -21,7 +21,7 @@ Estrutura do Projeto
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
 
 ## Documentação
-[Dashboard](https://app.powerbi.com/groups/me/reports/3be903e3-23a4-4128-a36e-b4fc1ef6adf8/e048a8918bdfa3977b5c?experience=power-bi&bookmarkGuid=3f225593dddfcd266102)
+[Dashboard](https://app.powerbi.com/groups/me/reports/3be903e3-23a4-4128-a36e-b4fc1ef6adf8/e048a8918bdfa3977b5c?experience=power-bi&bookmarkGuid=3f225593dddfcd266102)<br/>
 [Notebook](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_4/eda_dados_preco_petroleo_brent.ipynb)
 
 ## 🔗 Links
