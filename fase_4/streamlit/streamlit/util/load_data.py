@@ -8,7 +8,7 @@ def load_data(file_path):
 
 def main():
     # Caminho para o arquivo CSV
-    file_path = "C:/Users/KarinaNascimento1/Documents/05_Pessoal/02_Fiap/FASE4/fase_4/streamlit/data/ipeadata.csv"
+    file_path = "data/ipeadata.csv"
 
     # Carregar os dados do arquivo CSV
     df = load_data(file_path)

@@ -1,10 +1,8 @@
-# lstm_pipeline.py
 import pandas as pd
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
-# from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential 
+from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
@@ -49,7 +47,7 @@ class DataPreparer(BaseEstimator, TransformerMixin):
         return scaled_data, train_close
 
 class LSTMModel(BaseEstimator):
-    def __init__(self, epochs=12, batch_size=32, scaler=None):
+    def __init__(self, epochs=10, batch_size=50, scaler=None):
         self.epochs = epochs
         self.batch_size = batch_size
         self.model = None
@@ -57,10 +55,10 @@ class LSTMModel(BaseEstimator):
     
     def _create_model(self, input_shape):
         model = Sequential()
-        model.add(LSTM(units=32, return_sequences=True, input_shape=input_shape))
-        model.add(LSTM(units=32, return_sequences=True))
-        model.add(LSTM(units=32))
-        model.add(Dense(12))
+        model.add(LSTM(units=50, return_sequences=True, input_shape=input_shape))
+        model.add(LSTM(units=50, return_sequences=True))
+        model.add(LSTM(units=50))
+        model.add(Dense(10))
         model.add(Dense(1))
         model.compile(optimizer='adam', loss='mean_squared_error')
         return model

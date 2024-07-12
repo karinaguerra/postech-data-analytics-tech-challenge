@@ -2,7 +2,7 @@ import pandas as pd
 from prophet import Prophet
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import plotly.graph_objects as go
-import numpy as np # Import the NumPy library
+import numpy as np 
 
 def limpar_df_ipea(df_ipea):
     df_ipea.rename(columns={
