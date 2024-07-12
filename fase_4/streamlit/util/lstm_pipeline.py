@@ -2,9 +2,8 @@ import pandas as pd
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.preprocessing import MinMaxScaler
-import tensorflow as tf
-from keras.models import Sequential
-from keras.layers import LSTM, Dense
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.layers import LSTM, Dense
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 class DataCleaner(BaseEstimator, TransformerMixin):
