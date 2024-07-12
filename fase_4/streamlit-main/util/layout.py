@@ -2,7 +2,7 @@ import streamlit as st
 from st_pages import show_pages, Page
 import locale
 
-from util.constantes import TITULO_INTRODUCAO, TITULO_EDA, TITULO_MODELO, TITULO_PREV, TITULO_CONCLUSAO, TITULO_BIBLI
+from util.constantes import TITULO_INTRODUCAO, TITULO_EDA, TITULO_MODELO, TITULO_CONCLUSAO, TITULO_BIBLI
 
 def format_number(number, format='%0.0f'):
     return locale.format(format, number, grouping=True)
