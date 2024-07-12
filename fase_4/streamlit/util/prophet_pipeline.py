@@ -32,22 +32,3 @@ def calcular_metricas(result):
     r2 = r2_score(y_result, yhat_result)
     mape = (np.abs((y_result - yhat_result) / y_result)).mean() * 100
     return mse, mae, r2, mape
-
-def plotar_previsao(df, forecast):
-    fig = go.Figure()
-
-    # Plotando os valores reais
-    fig.add_trace(go.Scatter(x=df['ds'], y=df['y'], mode='lines', name='Valores Reais'))
-
-    # Plotando a previsão
-    fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat'], mode='lines', name='Previsão'))
-
-    fig.update_layout(
-        title='Previsão com Prophet',
-        xaxis_title='Data',
-        yaxis_title='Valor',
-        legend=dict(x=0, y=1),
-        margin=dict(l=0, r=0, t=30, b=0)
-    )
-
-    fig.show()
