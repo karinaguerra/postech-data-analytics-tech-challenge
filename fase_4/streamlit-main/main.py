@@ -19,6 +19,12 @@ except locale.Error:
             print("Localidade pt_BR não suportada, usando configuração padrão.")
 
 
+st.set_page_config(
+    page_title=f"{TITULO_INTRODUCAO} | {TITULO_PRINCIPAL}",
+    layout="wide",
+)
+output_layout()
+
 st.subheader(f"{TITULO_PRINCIPAL}")
 
 # Cria as abas
