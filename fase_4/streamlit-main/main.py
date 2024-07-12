@@ -6,20 +6,10 @@ import locale
 
 warnings.filterwarnings("ignore")
 
-# Tentando diferentes configurações de localidade para Windows
-try:
-    locale.setlocale(locale.LC_ALL, "pt_BR.UTF-8")
-except locale.Error:
-    try:
-        locale.setlocale(locale.LC_ALL, "pt_BR")
-    except locale.Error:
-        try:
-            locale.setlocale(locale.LC_ALL, "Portuguese_Brazil.1252")
-        except locale.Error:
-            print("Localidade pt_BR não suportada, usando configuração padrão.")
-
 st.set_page_config(
-    page_title=f"{TITULO_INTRODUCAO}", layout="wide")
+    page_title=f"{TITULO_INTRODUCAO} | {TITULO_PRINCIPAL}",
+    layout="wide",
+)
 output_layout()
 
 st.subheader(f"{TITULO_PRINCIPAL}")
