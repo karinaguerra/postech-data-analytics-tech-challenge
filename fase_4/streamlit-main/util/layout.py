@@ -10,13 +10,13 @@ def format_number(number, format='%0.0f'):
 def output_layout():
     show_pages(
         [
-            Page("/main.py", TITULO_INTRODUCAO, use_relative_hash=True),
-            Page("/pages/intro.py", TITULO_EDA, use_relative_hash=True),
-            Page("/pages/modelo.py", TITULO_MODELO, use_relative_hash=True),
-            Page("/pages/prev.py", TITULO_PREV, use_relative_hash=True,),
-            Page("/pages/conclusao.py", TITULO_CONCLUSAO, use_relative_hash=True),
-            Page("/pages/teste.py", 'Teste', use_relative_hash=True),
-            Page("/pages/bibliografia.py",TITULO_BIBLI,use_relative_hash=True,),
+            Page("./main.py", TITULO_INTRODUCAO, use_relative_hash=True),
+            Page("./pages/intro.py", TITULO_EDA, use_relative_hash=True),
+            Page("./pages/modelo.py", TITULO_MODELO, use_relative_hash=True),
+            Page("./pages/prev.py", TITULO_PREV, use_relative_hash=True,),
+            Page("./pages/conclusao.py", TITULO_CONCLUSAO, use_relative_hash=True),
+            Page("./pages/teste.py", 'Teste', use_relative_hash=True),
+            Page("./pages/bibliografia.py",TITULO_BIBLI,use_relative_hash=True,),
         ]
 
     )
