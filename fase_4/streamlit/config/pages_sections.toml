@@ -1,0 +1,23 @@
+[[pages]]
+path = "streamlit\\main.py"
+name = "Introdução"
+
+[[pages]]
+path = "streamlit\\pages\\1_eda.py"
+name = "EDA"
+
+[[pages]]
+path = "streamlit\\pages\\2_modelo.py"
+name = "Modelo"
+
+[[pages]]
+path = "streamlit\\pages\\3_previsao.py"
+name = "Previsão"
+
+[[pages]]
+path = "streamlit\\pages\\4_conclusao.py"
+name = "Conclusão"
+
+[[pages]]
+path = "streamlit\\pages\\5_bibliografia.py"
+name = "Bibliografia"
