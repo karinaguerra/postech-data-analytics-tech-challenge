@@ -5,9 +5,19 @@ import warnings
 import locale
 
 warnings.filterwarnings("ignore")
-locale.setlocale(locale.LC_ALL, "pt_BR.UTF-8")
-st.set_page_config(page_title=TITULO_INTRODUCAO, layout="wide")
-output_layout()
+
+# Tentando diferentes configurações de localidade para Windows
+try:
+    locale.setlocale(locale.LC_ALL, "pt_BR.UTF-8")
+except locale.Error:
+    try:
+        locale.setlocale(locale.LC_ALL, "pt_BR")
+    except locale.Error:
+        try:
+            locale.setlocale(locale.LC_ALL, "Portuguese_Brazil.1252")
+        except locale.Error:
+            print("Localidade pt_BR não suportada, usando configuração padrão.")
+
 
 st.subheader(f"{TITULO_PRINCIPAL}")
 
