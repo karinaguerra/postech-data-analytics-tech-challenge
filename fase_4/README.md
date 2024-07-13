@@ -19,6 +19,7 @@ Estrutura do Projeto
 ![Colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=googlecolab&logoColor=white&color=%23F9AB00)<br/>
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-black?style=for-the-badge&logo=streamlit&logoColor=%23ffffff&color=%23FF4B4B&cacheSeconds=https%3A%2F%2Fpostech-data-analytics-tech-challenge-a9zwy3cmpxayycsgmxf8pj.streamlit.app%2F)
 
 ## Documentação
 [Dashboard](https://app.powerbi.com/groups/me/reports/3be903e3-23a4-4128-a36e-b4fc1ef6adf8/e048a8918bdfa3977b5c?experience=power-bi&bookmarkGuid=3f225593dddfcd266102)<br/>
