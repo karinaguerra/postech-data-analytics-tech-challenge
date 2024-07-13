@@ -27,7 +27,7 @@ with st.container():
         # Carregar o modelo salvo
         @st.cache_resource
         def load_model():
-            modelo = joblib.load('streamlit-main/modelos/modelo_prophet.pkl')
+            modelo = joblib.load('fase_4/streamlit-main/modelos/modelo_prophet.pkl')
             return modelo
 
         modelo_prophet = load_model()

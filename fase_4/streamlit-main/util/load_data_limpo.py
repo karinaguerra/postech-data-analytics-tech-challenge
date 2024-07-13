@@ -8,7 +8,7 @@ def load_data_limpo(file_path):
 
 def main():
     # Caminho para o arquivo CSV
-    file_path = "streamlit-main/data/ipeadata_limpo.csv"
+    file_path = "fase_4/streamlit-main/data/ipeadata_limpo.csv"
 
     # Carregar os dados do arquivo CSV
     df = load_data_limpo(file_path)
