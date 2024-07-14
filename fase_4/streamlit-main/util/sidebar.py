@@ -5,7 +5,7 @@ def sidebar_layout():
     with st.sidebar:
         st.caption("<small>:orange[Criado por:]</small>", unsafe_allow_html=True)
         st.write("Karina Guerra do Nacimento")
-        st.write("RM 352525")
+        st.write("RM 352525 | Grupo 35")
         st.write("---")
 
         st.caption("<small>:orange[Links:]</small>", unsafe_allow_html=True)
