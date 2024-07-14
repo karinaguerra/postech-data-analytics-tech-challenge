@@ -9,20 +9,14 @@ Analisar os dados históricos de preço do petróleo Brent, encontrados no site 
 ![Streamlit](https://img.shields.io/badge/Streamlit-black?style=for-the-badge&logo=streamlit&logoColor=%23ffffff&color=%23FF4B4B) <br/>
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
-<<<<<<< HEAD
 ![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=white)
-=======
-![Streamlit](https://img.shields.io/badge/Streamlit-black?style=for-the-badge&logo=streamlit&logoColor=%23ffffff&color=%23FF4B4B&cacheSeconds=https%3A%2F%2Fpostech-data-analytics-tech-challenge-a9zwy3cmpxayycsgmxf8pj.streamlit.app%2F)
 
->>>>>>> a153cc15a766e951e2a92c65976e198bee8ba326
 ## Documentação
-
 [Repositório](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_4)<br/>
 [Dashboard BI](https://app.powerbi.com/groups/me/reports/3be903e3-23a4-4128-a36e-b4fc1ef6adf8?ctid=11dbbfe2-89b8-4549-be10-cec364e59551&pbi_source=linkShare)<br/>
 [Streamlit](https://postech-data-analytics-tech-challenge-a9zwy3cmpxayycsgmxf8pj.streamlit.app/)
 
 ## Instalação
-
 #### 1 - Clone o Repositório
 Primeiro, clone o repositório da aplicação:
 ```bash
