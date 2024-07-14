@@ -11,10 +11,12 @@ Analisar os dados históricos de preço do petróleo Brent, encontrados no site 
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
 ![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=white)
 
-## Documentação
-[Repositório](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_4)<br/>
+## Aplicações
 [Dashboard BI](https://app.powerbi.com/groups/me/reports/3be903e3-23a4-4128-a36e-b4fc1ef6adf8?ctid=11dbbfe2-89b8-4549-be10-cec364e59551&pbi_source=linkShare)<br/>
 [Streamlit](https://postech-data-analytics-tech-challenge-a9zwy3cmpxayycsgmxf8pj.streamlit.app/)
+
+## Documentação
+[Repositório](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_4)<br/>
 
 ## Instalação
 #### 1 - Clone o Repositório
