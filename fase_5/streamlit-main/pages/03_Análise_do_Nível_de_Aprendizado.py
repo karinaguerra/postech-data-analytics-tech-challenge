@@ -14,9 +14,9 @@ output_layout()
 df_magico = main()
 
 # Defina os caminhos corretos dos arquivos CSV
-caminho_csv_2020 = 'data/df_2020_limpo.csv'
-caminho_csv_2021 = 'data/df_2021_limpo.csv'
-caminho_csv_2022 = 'data/df_2022_limpo.csv'
+caminho_csv_2020 = 'fase_5/streamlit-main/data/df_2020_limpo.csv'
+caminho_csv_2021 = 'fase_5/streamlit-main/data/df_2021_limpo.csv'
+caminho_csv_2022 = 'fase_5/streamlit-main/data/df_2022_limpo.csv'
 
 # Função para carregar os dados
 def carregar_dados():
