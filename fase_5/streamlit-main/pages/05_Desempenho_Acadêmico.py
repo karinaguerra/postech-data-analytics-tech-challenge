@@ -14,11 +14,10 @@ output_layout()
 df_magico = main()
 
 # Defina os caminhos corretos dos arquivos CSV
-caminho_csv_2020 = 'data/df_2020_limpo.csv'
-caminho_csv_2021 = 'data/df_2021_limpo.csv'
-caminho_csv_2022 = 'data/df_2022_limpo.csv'
+caminho_csv_2020 = 'fase_5/streamlit-main/data/df_2020_limpo.csv'
+caminho_csv_2021 = 'fase_5/streamlit-main/data/df_2021_limpo.csv'
+caminho_csv_2022 = 'fase_5/streamlit-main/data/df_2022_limpo.csv'
 
-# Função para carregar os dados
 def carregar_dados():
     df_2020 = pd.read_csv(caminho_csv_2020)
     df_2021 = pd.read_csv(caminho_csv_2021)
@@ -26,7 +25,6 @@ def carregar_dados():
     return df_2020, df_2021, df_2022
 
 df_2020, df_2021, df_2022 = carregar_dados()
-
 
 with st.container():
     st.title("Desempenho Acadêmico")
@@ -42,17 +40,13 @@ with st.container():
         """)
              
 with st.container():
-    # Função para agrupar os dados por ano e gerar o gráfico de barras
     def plot_alunos_por_pedra_por_ano(df_2020, df_2021, df_2022):
-        # Agrupar os dados por ano e pedra, contando o número de alunos
         df_grouped_2020 = df_2020.groupby(['PEDRA']).size().reset_index(name='Alunos').sort_values(by='Alunos', ascending=False)
         df_grouped_2021 = df_2021.groupby(['PEDRA']).size().reset_index(name='Alunos').sort_values(by='Alunos', ascending=False)
         df_grouped_2022 = df_2022.groupby(['PEDRA']).size().reset_index(name='Alunos').sort_values(by='Alunos', ascending=False)
         
-        # Selecionar o ano no Streamlit com uma chave única
         ano_selecionado = st.selectbox('Escolha o ano:', ['2020', '2021', '2022'], key='selectbox_ano')
 
-        # Filtrar o DataFrame de acordo com o ano selecionado
         if ano_selecionado == '2020':
             df_selecionado = df_grouped_2020
         elif ano_selecionado == '2021':
@@ -60,7 +54,6 @@ with st.container():
         else:
             df_selecionado = df_grouped_2022
 
-        # Criar o gráfico de barras usando Plotly
         fig = px.bar(
             df_selecionado,
             x='PEDRA',
@@ -70,17 +63,13 @@ with st.container():
             color_discrete_sequence=['#626EF5']
         )
 
-        # Ajustar a aparência do gráfico
         fig.update_layout(
             xaxis_title='Tipo de Pedra',
             yaxis_title='Número de Alunos'
         )
 
-        # Exibir o gráfico no Streamlit
         st.plotly_chart(fig, use_container_width=True)
 
-    # Exemplo de uso da função no Streamlit
-    # Substitua df_2020, df_2021 e df_2022 pelos seus DataFrames reais
     plot_alunos_por_pedra_por_ano(df_2020, df_2021, df_2022)
 
 with st.container():
@@ -101,7 +90,6 @@ with st.container():
         
         pedras = df_grouped['PEDRA'].unique()
         
-        # Criar um seletor para escolher as pedras a serem exibidas
         pedras_selecionadas = st.multiselect(
             'Selecione as Pedras para Exibir:',
             options=pedras,
