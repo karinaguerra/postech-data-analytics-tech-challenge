@@ -13,12 +13,10 @@ output_layout()
 # Carregamento dos dado (carregar_dados.py)
 df_magico = main()
 
-# Defina os caminhos corretos dos arquivos CSV
 caminho_csv_2020 = 'fase_5/streamlit-main/data/df_2020_limpo.csv'
 caminho_csv_2021 = 'fase_5/streamlit-main/data/df_2021_limpo.csv'
 caminho_csv_2022 = 'fase_5/streamlit-main/data/df_2022_limpo.csv'
 
-# Função para carregar os dados
 def carregar_dados():
     df_2020 = pd.read_csv(caminho_csv_2020)
     df_2021 = pd.read_csv(caminho_csv_2021)
@@ -26,7 +24,7 @@ def carregar_dados():
     return df_2020, df_2021, df_2022
 
 df_2020, df_2021, df_2022 = carregar_dados()
-# Titulo e subtitulo
+
 with st.container():
     st.title("Análise do Nível de Aprendizado dos Alunos por Fase")
 
@@ -37,13 +35,11 @@ with st.container():
                
 with st.container():
 
-    # Função para agrupar e contar alunos por fase e ano
     def agrupar_por_fase_e_ano(df):
         df_grouped = df.groupby(['ANO', 'FASE']).size().reset_index(name='Alunos')
         df_grouped['ANO'] = df_grouped['ANO'].astype(str)  # Garantir que 'ANO' seja tratado como string
         return df_grouped
 
-    # Função para criar o gráfico
     def plot_alunos_por_fase(df_grouped, titulo):
         fig = px.bar(
             df_grouped,
@@ -55,9 +51,7 @@ with st.container():
             barmode='group',
             color_discrete_sequence=['#626EF5','#629BF0','#8462F0']  # Paleta de cores azul
         )
-    
 
-        # Melhorando a apresentação do layout
         fig.update_layout(
             xaxis_title='Fase',
             yaxis_title='Número de Alunos',
@@ -67,16 +61,13 @@ with st.container():
         
         return fig
 
-    # Agrupar os dados totais e por ano a partir do df_magico
     df_total = agrupar_por_fase_e_ano(df_magico)
     df_2020_grouped = df_total[df_total['ANO'] == '2020']
     df_2021_grouped = df_total[df_total['ANO'] == '2021']
     df_2022_grouped = df_total[df_total['ANO'] == '2022']
 
-    # Seletor para escolher o ano, com chave (key) única
     ano_selecionado = st.selectbox('Escolha o ano:', ['Total', '2020', '2021', '2022'], key='ano_selecionado')
 
-    # Exibir o gráfico ou aviso dependendo do ano selecionado
     if ano_selecionado == 'Total':
         fig_total = plot_alunos_por_fase(df_total, 'Número Total de Alunos por Fase (2020-2022)')
         st.plotly_chart(fig_total, use_container_width=True)
@@ -103,10 +94,8 @@ with st.container():
         """)
 
     def plot_grades_plotly(df_concat):
-        # Agrupar os dados por fase e calcular a média das notas
         df_grouped = df_concat.groupby('FASE')[['NOTA_PORT', 'NOTA_MAT', 'NOTA_ING']].mean().reset_index()
         
-        # Criar o gráfico de linhas usando Plotly
         fig = px.line(df_grouped, 
                     x='FASE', 
                     y=['NOTA_PORT', 'NOTA_MAT', 'NOTA_ING'],
@@ -119,7 +108,6 @@ with st.container():
                                                 else 'Matemática' if t.name == 'NOTA_MAT' 
                                                 else 'Inglês'))
         
-        # Configurar as cores das linhas
         colors = {
             'Português': '#626EF5',
             'Matemática': '#8562F5',
@@ -128,7 +116,6 @@ with st.container():
         
         fig.for_each_trace(lambda t: t.update(line=dict(color=colors[t.name], width=2)))
     
-        # Atualizar a legenda e layout
         fig.update_layout(
             legend_title_text='Disciplinas',
         )
@@ -143,14 +130,11 @@ with st.container():
                
              """)
     
-    # Função para criar e exibir o gráfico
     def plot_individual_scores(df):
         df_grouped = df.groupby('FASE')['INDE'].mean().reset_index()
         
-        # Criar o gráfico de linhas
         fig = go.Figure()
         
-        # Adicionar linha
         fig.add_trace(go.Scatter(
             x=df_grouped['FASE'], 
             y=df_grouped['INDE'],
@@ -160,7 +144,6 @@ with st.container():
             name='Média da Pontuação INDE'
         ))
         
-        # Adicionar anotações
         for index, row in df_grouped.iterrows():
             fig.add_annotation(
                 x=row['FASE'], 
@@ -172,7 +155,6 @@ with st.container():
                 ay=-40
             )
         
-        # Ajustar a aparência do gráfico
         fig.update_layout(
             title='Média da Pontuação INDE por Fase',
             xaxis_title='Fase',
@@ -180,7 +162,6 @@ with st.container():
             template='plotly_white'
         )
         
-        # Exibir o gráfico
         st.plotly_chart(fig, use_container_width=True)
     
     plot_individual_scores(df_magico)
