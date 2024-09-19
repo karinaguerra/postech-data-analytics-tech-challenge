@@ -8,7 +8,7 @@ def carregar_dados(file_path):
 
 def main():
     # Caminho para o arquivo CSV
-    file_path = "data\df_concat.csv"
+    file_path = "data/df_concat.csv"
 
     # Carregar os dados do arquivo CSV
     df = carregar_dados(file_path)
