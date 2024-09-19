@@ -13,19 +13,16 @@ output_layout()
 # Carregamento dos dado (carregar_dados.py)
 df_magico = main()
 
-# Defina os caminhos corretos dos arquivos CSV
 caminho_csv_2020 = 'fase_5/streamlit-main/data/df_2020_limpo.csv'
 caminho_csv_2021 = 'fase_5/streamlit-main/data/df_2021_limpo.csv'
 caminho_csv_2022 = 'fase_5/streamlit-main/data/df_2022_limpo.csv'
 
-# Função para carregar os dados
 def carregar_dados():
     df_2020 = pd.read_csv(caminho_csv_2020)
     df_2021 = pd.read_csv(caminho_csv_2021)
     df_2022 = pd.read_csv(caminho_csv_2022)
     return df_2020, df_2021, df_2022
     
-# Titulo e subtitulo
 with st.container():
     st.title("Análise dos Alunos da Passos Mágicos ")
     st.subheader("Análise exploratória de dados")
@@ -71,13 +68,11 @@ with st.container():
 
     with tab0:
         def mostrar_grafico_idade(df_magico):
-            # Filtra o DataFrame para garantir que as idades sejam válidas (> 0)
             df_idade_media = df_magico[df_magico['IDADE_ALUNO'] > 0]
             
             fig = px.box(
                 df_idade_media,
                 y='IDADE_ALUNO',
-                #title='Média da Idade dos Alunos',
                 labels={'IDADE_ALUNO': 'Idade dos Alunos'},
                 color_discrete_sequence=['#626EF5']
             )
@@ -91,25 +86,20 @@ with st.container():
 
     with tab1:
         def plot_histogram(df):
-            # Filtrar os dados
             df_filtered = df[df['IDADE_ALUNO'] > 0]
 
-            # Criar o histograma com os dados filtrados
             fig = px.histogram(
                 df_filtered,
                 x='IDADE_ALUNO',
-                #title='Total de Alunos por Idade',
                 labels={'IDADE_ALUNO': 'Idade dos Alunos'},
                 color_discrete_sequence=['#626EF5']
             )
 
-            # Ajustar a aparência do layout do gráfico
             fig.update_layout(
                 xaxis_title='Idade dos Alunos',
                 yaxis_title='Total de Alunos',
             )
 
-            # Exibir o gráfico no Streamlit
             st.plotly_chart(fig, use_container_width=True)
 
         plot_histogram(df_magico)
@@ -130,10 +120,8 @@ with st.container():
     
 with st.container():
 
-        # Carregar os dados
         df_2020, df_2021, df_2022 = carregar_dados()
 
-        # Criar o DataFrame mágico com dados combinados
         def criar_df_magico(df_2020, df_2021, df_2022):
             df_2020['Ano'] = '2020'
             df_2021['Ano'] = '2021'
@@ -146,16 +134,12 @@ with st.container():
             
             return df_magico, df_magico_total
 
-        # Criar o DataFrame mágico e o total
         df_magico, df_magico_total = criar_df_magico(df_2020, df_2021, df_2022)
 
-        # Função para criar o gráfico
         def plot_alunos_por_instituicao(df, ano):
-            # Contar a quantidade de alunos por INSTITUICAO_ENSINO_ALUNO
             alunos_por_instituicao = df['INSTITUICAO_ENSINO_ALUNO'].value_counts().reset_index()
             alunos_por_instituicao.columns = ['Instituição de Ensino', 'Quantidade de Alunos']
             
-            # Criar o gráfico
             fig = px.bar(
                 alunos_por_instituicao,
                 x='Instituição de Ensino',
@@ -165,7 +149,6 @@ with st.container():
                 color_discrete_sequence=['#626EF5']
             )
             
-            # Ajustar a aparência do layout do gráfico
             fig.update_layout(
                 xaxis_title='Instituição de Ensino',
                 yaxis_title='Quantidade de Alunos',
@@ -173,7 +156,6 @@ with st.container():
             
             return fig
 
-        # Função para criar o gráfico de totais
         def plot_total_alunos(df_total):
             fig = px.bar(
                 df_total,
@@ -192,16 +174,12 @@ with st.container():
             
             return fig
 
-        # Seletor para escolher o ano
         ano = st.selectbox('Escolha o ano:', ['Total', '2020', '2021', '2022'])
 
-        # Exibir o gráfico ou aviso dependendo do ano selecionado
         if ano == 'Total':
-            # Mostrar o gráfico total
             fig_total = plot_total_alunos(df_magico_total)
             st.plotly_chart(fig_total, use_container_width=True)
         elif ano == '2022':
-            # Aviso que 2022 não tem dados
             st.warning('Aviso: Não há dados disponíveis para o ano de 2022.', icon="⚠️")
         else:
             if ano == '2020':
