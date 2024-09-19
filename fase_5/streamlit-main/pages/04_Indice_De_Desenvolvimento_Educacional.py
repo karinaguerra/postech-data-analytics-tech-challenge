@@ -12,12 +12,10 @@ output_layout()
 # Carregamento dos dado (carregar_dados.py)
 df_magico = main()
 
-# Defina os caminhos corretos dos arquivos CSV
 caminho_csv_2020 = 'fase_5/streamlit-main/data/df_2020_limpo.csv'
 caminho_csv_2021 = 'fase_5/streamlit-main/data/df_2021_limpo.csv'
 caminho_csv_2022 = 'fase_5/streamlit-main/data/df_2022_limpo.csv'
 
-# Função para carregar os dados
 def carregar_dados():
     df_2020 = pd.read_csv(caminho_csv_2020)
     df_2021 = pd.read_csv(caminho_csv_2021)
@@ -26,7 +24,6 @@ def carregar_dados():
 
 df_2020, df_2021, df_2022 = carregar_dados()
 
-# Titulo e subtitulo
 with st.container():
     st.title("Análise dos Indicadores do Índice de Desenvolvimento Educacional (INDE) no Passos Mágicos")
 
@@ -83,24 +80,19 @@ with st.container():
 
 
     def plot_histograma_inde(df_2020, df_2021, df_2022):
-        # Selecionar apenas a coluna 'INDE' de cada DataFrame
         inde_2020 = df_2020['INDE']
         inde_2021 = df_2021['INDE']
         inde_2022 = df_2022['INDE']
-        # Criar um DataFrame para combinar todos os anos
         data = {
             'INDE': list(inde_2020) + list(inde_2021) + list(inde_2022),
             'Ano': ['2020'] * len(inde_2020) + ['2021'] * len(inde_2021) + ['2022'] * len(inde_2022)
         }
         df_inde = pd.DataFrame(data)
-        # Opções de seleção de ano
         ano_selecionado = st.selectbox('Escolha o ano:', ['Total', '2020', '2021', '2022'], key='selectbox_inde_histograma')
-        # Filtrar os dados de acordo com o ano selecionado
         if ano_selecionado != 'Total':
             df_inde_filtrado = df_inde[df_inde['Ano'] == ano_selecionado]
         else:
             df_inde_filtrado = df_inde
-        # Criar o histograma com os dados filtrados
         fig = px.histogram(
             df_inde_filtrado,
             x='INDE',
@@ -110,45 +102,34 @@ with st.container():
             nbins=20,  # Número de bins (intervalos) no histograma
             color_discrete_sequence=['#626EF5', '#629BF0', '#8462F0']
         )
-        # Atualizar layout do gráfico
         fig.update_layout(
             xaxis_title='Valor do INDE',
             yaxis_title='Contagem',
             bargap=0.2  # Espaçamento entre as barras
         )
-        # Exibir o gráfico no Streamlit
         st.plotly_chart(fig, use_container_width=True)
-    # Exemplo de uso da função no Streamlit
     plot_histograma_inde(df_2020, df_2021, df_2022)
     
     st.write("""O grafico abaixo fornece uma visão da distribuição geral do INDE entre os alunos. A concentração de valores em torno da mediana sugere que a maioria dos alunos apresenta um desenvolvimento educacional consistente, com uma pontuação de 7,28. No entanto, os outliers identificados indicam que uma pequena parte dos alunos pode estar enfrentando maiores dificuldades em seu progresso, o que exige uma atenção mais específica.""")
 
-                # Função para criar o gráfico de distribuição dos indicadores
     def plot_inde_indicadores(df_2020, df_2021, df_2022):
-        # Concatenar os DataFrames com uma coluna 'Ano' correspondente
         df_2020['Ano'] = '2020'
         df_2021['Ano'] = '2021'
         df_2022['Ano'] = '2022'
         df_todos = pd.concat([df_2020, df_2021, df_2022])
-        # Seleção de ano no Streamlit (com opção "Todos")
         ano_selecionado = st.selectbox('Selecione o ano:', ['Total', '2020', '2021', '2022'], key='selectbox_inde_boxplot')
-        # Filtrar o DataFrame com base na seleção do ano
         if ano_selecionado != 'Total':
             df_filtrado = df_todos[df_todos['Ano'] == ano_selecionado]
         else:
             df_filtrado = df_todos
-        # Criar o gráfico de box plot com Plotly
         fig = px.box(
             df_filtrado,
             y='INDE',
             title=f'Distribuição dos Indicadores ({ano_selecionado})',
             labels={'value': 'Valor do Indicador', 'variable': 'Indicador Técnico'},
             color_discrete_sequence=['#626EF5']
-            # points='all'  # Mostrar todos os pontos para maior detalhe
         )
-        # Exibir o gráfico no Streamlit
         st.plotly_chart(fig, use_container_width=True)
-    # Exemplo de uso da função no Streamlit (substitua df_2020, df_2021, df_2022 pelos DataFrames reais)
     plot_inde_indicadores(df_2020, df_2021, df_2022)
 
     st.write("""
@@ -156,24 +137,18 @@ with st.container():
      """)        
 
     def plot_correlation_heatmap(df):
-            # Selecionar as colunas relevantes para a correlação
             correlation_data = df[['INDE', 'IAA', 'IEG', 'IPS', 'IDA', 'IPP', 'IPV', 'IAN']]
-
-            # Calcular a matriz de correlação
             correlation_matrix = correlation_data.corr()
-            # Criar o heatmap usando Plotly
             fig = px.imshow(correlation_matrix, 
                             text_auto=True, 
                             aspect="auto", 
                             color_continuous_scale='Purples', 
                             title='Matriz de Correlação entre as Pontuações')
 
-            # Ajustar o layout
             fig.update_layout(
                 width=800, 
                 height=500,
             )
-            # Exibir o gráfico no Streamlit
             st.plotly_chart(fig, use_container_width=True)
 
     plot_correlation_heatmap(df_magico)    
