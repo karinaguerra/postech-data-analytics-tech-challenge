@@ -11,7 +11,7 @@ def output_layout():
         st.caption("<small>[Links:]</small>", unsafe_allow_html=True)
         st.link_button(
             "Repositório",
-            "https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_4/README.md",
+            "https://github.com/karinaguerra/postech-data-analytics-tech-challenge/blob/main/fase_5/README.md",
             help=None,
             type="secondary",
             disabled=False,
