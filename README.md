@@ -13,7 +13,7 @@ Este projeto analisa os dados educacionais dos alunos da Associação Passos Má
 ## Documentação
 
 [Repositório](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_5)<br/>
-[Dashboard BI](https://app.powerbi.com/groups/me/reports/3be903e3-23a4-4128-a36e-b4fc1ef6adf8?ctid=11dbbfe2-89b8-4549-be10-cec364e59551&pbi_source=linkShare)<br/>
+[Dashboard BI](https://app.powerbi.com/groups/me/reports/7ae6e389-4714-45d8-93ea-79d556d99846/23e0b55ce0b6574fa5e6?experience=power-bi)<br/>
 [Streamlit](https://postech-data-analytics-tech-challenge-h7o82u5mrwndsbmj264cuk.streamlit.app/)
 
 ## Instalação
