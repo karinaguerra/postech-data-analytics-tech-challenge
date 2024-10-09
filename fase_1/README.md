@@ -7,7 +7,7 @@ explicando a quantidade de vinhos exportados e os fatores ex-ternos que
 
 --<br><br>
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Colab](https://img.shields.io/badge/Colab-black?style=for-the-badge&logo=googlecolab&logoColor=white&color=%23F9AB00)<br/>
+![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)<br/>
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Seaborn-black?style=for-the-badge&color=%2340AEF0)
 
