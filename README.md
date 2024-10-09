@@ -23,7 +23,7 @@ O Tech Challenge da FIAP são desafios da pós-tech Data Analytics com o objetiv
 
 
 
-## Documentação
+## Fases
 
 [Fase 1 - Análise de exportação de vinhos do Brasil](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_1)
 <br/>
