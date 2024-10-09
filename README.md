@@ -8,22 +8,27 @@ O Tech Challenge da FIAP são desafios da pós-tech Data Analytics com o objetiv
 ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
 ![Streamlit](https://img.shields.io/badge/Streamlit-black?style=for-the-badge&logo=streamlit&logoColor=%23ffffff&color=%23FF4B4B)
 ![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=white)
+![GoogleBigQuery](https://img.shields.io/badge/bigquery-black?style=for-the-badge&logo=googlebigquery&logoColor=%23ffffff&color=%23669DF6)
 <br/>
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/matplotlib-black?style=for-the-badge&color=%23396CB2)
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/seaborn-black?style=for-the-badge&color=%23047DA3)
+![PySpark](https://img.shields.io/badge/pyspark-black?style=for-the-badge&logo=apachespark&logoColor=%23ffffff&color=%23E25A1C)
 <br/>
 ![Keras](https://img.shields.io/badge/Keras-FF0000?style=for-the-badge&logo=keras&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Knime](https://img.shields.io/badge/knime-black?style=for-the-badge&logo=knime&logoColor=black&color=%23FDD800)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 
 
 
 
-## Fases
+
+
+## Documentação
 
 [Fase 1 - Análise de exportação de vinhos do Brasil](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_1)
 <br/>
