@@ -3,7 +3,7 @@
 
 O Tech Challenge da FIAP são desafios da pós-tech Data Analytics com o objetivo de incentivar a inovação, criatividade e habilidades técnicas dos estudantes. Os participantes enfrentam desafios relacionados à tecnologia, negócios e inovação, sendo uma excelente oportunidade para aplicar o conhecimento adquirido em sala de aula em situações reais.
 
---<br><br>
+<br><br>
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
 ![Streamlit](https://img.shields.io/badge/Streamlit-black?style=for-the-badge&logo=streamlit&logoColor=%23ffffff&color=%23FF4B4B)
@@ -23,12 +23,7 @@ O Tech Challenge da FIAP são desafios da pós-tech Data Analytics com o objetiv
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 
-
-
-
-
-
-## Documentação
+## Fases
 
 [Fase 1 - Análise de exportação de vinhos do Brasil](https://github.com/karinaguerra/postech-data-analytics-tech-challenge/tree/main/fase_1)
 <br/>
