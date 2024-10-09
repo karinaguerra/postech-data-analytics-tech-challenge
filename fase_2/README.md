@@ -11,7 +11,8 @@ Para isso utilize a base de dados contida no [site da investing](https://br.inve
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)<br/>
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Prophet](https://img.shields.io/badge/Meta_Prophet-black?style=for-the-badge&color=%23065A8F)
+![Prophet](https://img.shields.io/badge/Prophet-black?style=for-the-badge&color=%23065A8F)
+
 
 
 
